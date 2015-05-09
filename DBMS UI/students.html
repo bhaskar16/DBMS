@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/animate.css" rel="stylesheet">
+   <link href="css/response.css" rel="stylesheet">
+
+<link href="css/table.css" rel="stylesheet" type="text/css"/>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+
+<script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+ <script src="js/npm.js"></script>
+ 
+
+</head>
+<body  >
+<div class="jumbotron">
+      <center><h2>Welcome to the Student's section</h2></center>
+	  <p align="center" id="enroll"> Your enrollment number is : </p> 
+
+</div>
+<hr>
+<br>
+<div class="container">
+<ul id="myTab" class="nav nav-tabs">
+   <li class="active">
+      <a href="#routine" data-toggle="tab">
+         Routine
+      </a>
+   </li>
+   <li><a href="#attendance" data-toggle="tab">Attendance</a></li>
+   <li><a href="#info" data-toggle="tab">Personal Information</a></li>
+   <li><a href="#paper" data-toggle="tab">Papers</a></li>
+
+   </ul>
+<div id="myTabContent" class="tab-content">
+   <div class="tab-pane fade in active" id="routine">
+   <table class="table table-hover table-bordered">
+  
+   <thead>
+      <tr>
+         <th>Day</th>
+         <th>Period 1</th>
+		 <th>Period 2</th>
+		 <th>Period 3</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+	  <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+   </tbody>
+</table>
+   </div>
+   <div class="tab-pane fade" id="attendance">
+    <table class="table table-hover table-bordered">
+   
+   <thead>
+      <tr>
+         <th>Paper</th>
+         <th>Days attended</th>
+		 <th>Total no of days</th>
+		 <th>Percent attendance</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+	  <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+      </tr>
+   </tbody>
+</table>
+   </div>
+   <div class="tab-pane fade" id="info">
+       <h3>My Personal Info</h3>
+	  <table class="table">
+   
+   <thead>
+      <tr>
+         <th>Name</th>
+         <th>&nbsp;</th>
+      </tr>
+  
+   
+      <tr>
+         <th>Id</th>
+         <th>&nbsp;</th>
+         
+      </tr>
+      <tr>
+         <th>Contact</th>
+         <th>&nbsp;</th>
+         
+      </tr>
+	  <tr>
+         <th>Email</th>
+         <th>&nbsp;</th>
+         
+      </tr>
+      
+   </thead>
+</table>
+</div>
+<div class="tab-pane fade in" id="paper">
+<table class="table table-hover table-bordered">
+  
+   <thead>
+      <tr>
+         <th>Paper Code</th>
+         <th>Paper Name</th>
+		 <th>Credits</th>
+		 
+      </tr>
+   </thead>
+   <tbody>
+      
+      
+      <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+         
+      </tr>
+	  <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+         
+      </tr>
+	  <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+		  <td>&nbsp;</td>
+         
+      </tr>
+   </tbody>
+</table>
+	
+</div>
+
+</div>
+<script>
+   $(function(){
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      // Get the name of active tab
+      var activeTab = $(e.target).text(); 
+      // Get the name of previous tab
+      var previousTab = $(e.relatedTarget).text(); 
+      $(".active-tab span").html(activeTab);
+      $(".previous-tab span").html(previousTab);
+   });
+});
+</script>
+</div>
+
+
+
+
+</body>
+</html>
